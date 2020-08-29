@@ -48,7 +48,7 @@ it('renders repos', async () => {
     
     expect(screen.getByText('Loading...')).toBeInTheDocument();
 
-    // getByText is not async
+    // getByText is not asynchronous
     const repoTitle = await screen.findByText('Headphones');
     expect(repoTitle).toBeInTheDocument();
 })
